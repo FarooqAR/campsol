@@ -2,6 +2,7 @@
 https://farooqar.github.io/campsol
 
 Contribution Guidelines:
+* Never merge your branch with `master` or `gh-pages` unless you know the consequences!.
 * Always pull before working. 
 
   `git pull origin master`

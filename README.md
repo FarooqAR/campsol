@@ -1,4 +1,6 @@
 # campsol
+https://farooqar.github.io/campsol
+
 Contribution Guidelines:
 * Always pull before working. 
 

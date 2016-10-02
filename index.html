@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Startmin - Bootstrap Admin Theme</title>
+    <title>CampSol | School Management System</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -51,13 +51,6 @@
             <span class="icon-bar"></span>
         </button>
 
-        <!-- Top Navigation: Left Menu -->
-        <ul class="nav navbar-nav navbar-left navbar-top-links">
-            <li><a href="#"><i class="fa fa-home fa-fw"></i> Home</a></li>
-            <li><a href="#"><i class="fa fa-info fa-fw"></i> About</a></li>
-            <li><a href="#"><i class="fa fa-phone fa-fw"></i> Contact</a></li>
-            <li><a href="#"><i class="fa fa-user-secret fa-fw"></i> Privacy</a></li>
-        </ul>
 
         <!-- Top Navigation: Right Menu -->
         <ul class="nav navbar-right navbar-top-links">
@@ -115,17 +108,31 @@
                         </div>
                     </li>
                     <li data-load="pages/dashboard">
-                        <a href="#" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        <a href="#dashboard" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Students<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-graduation-cap fa-fw"></i> Students<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            
+                            <li data-load='pages/manage'>
+                                <a href="#manage"><i class="fa fa-cog fa-fw"></i> Manage</a>
+                            </li>
+
                             <li data-load='pages/exams'>
-                                <a href="#">Exams</a>
+                                <a href="#exams"><i class="fa fa-file-text-o fa-fw"></i> Exams</a>
                             </li>
                             <li data-load='pages/attendance'>
-                                <a href="#">Attendance</a>
+                                <a href="#attendance"><i class="fa fa-check-square-o fa-fw"></i> Attendance</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-users fa-fw"></i> Employee<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li data-load='pages/employee/manage'>
+                                <a href="#employee-manage"><i class="fa fa-cog fa-fw"></i> Manage</a>
+                            </li>
+                            <li data-load='pages/employee/attendance'>
+                                <a href="#employee-attendance"><i class="fa fa-check-square-o fa-fw"></i> Attendance</a>
                             </li>
                         </ul>
                     </li>
@@ -141,6 +148,7 @@
             <div id="content">
                     <!--pages will be loaded here-->
             </div>
+            <div class="spinner"></div>
         </div>
     </div>
 
@@ -151,6 +159,7 @@
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 
+<script src="js/jquery.ba-hashchange.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 

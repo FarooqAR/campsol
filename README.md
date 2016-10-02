@@ -20,13 +20,14 @@ Contribution Guidelines:
 
   ```
 * To add a link to the above page, Add the list item with link in `ul#side-menu`. You'll find this menu at the bottom of `index.html`.
-Replace `page_name` with link to your newly created page
+  For example, if you want to add link to `pages/students/attendance.html`, then do something like this:
+  (`#students-attendance` will be converted to `pages/students/attendance.html`. therefore spelling is important)
 
   ```html
   <ul class="nav" id="side-menu">
       //...
-      <li data-load="pages/page_name">
-          <a href="#" class="active">Page name</a>
+      <li>
+          <a href="#students-attendance" class="active">Page name</a>
       </li>
   </ul>
   ```

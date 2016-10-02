@@ -756,3 +756,7 @@ table.dataTable thead .sorting:after {
 .table-controls-selected{
     display: none;
 }
+.list-status{
+    font-weight: bold;
+    color: #999;
+}

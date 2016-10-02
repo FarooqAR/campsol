@@ -5,3 +5,238 @@
 </div>
 
 <!-- ... Your content goes here ... -->
+<form id="employee-attendance-search" action="#">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="employee_name">Select Employee Name or ID</label>
+                <input type="text" id="employee_name" class="form-control" placeholder="Enter Employee Name or ID">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="department">Select Department</label>
+                <select id="department" class="form-control">
+                    <option>Administration</option>
+                    <option>Library</option>
+                    <option>IT</option>
+                    <option>Teacher</option>
+                </select>
+            </div>
+        </div>
+
+
+    </div>
+    <p>
+        <input type="submit" class="btn btn-primary" value="Search">
+        <input type="button" class="btn btn-default" value="Reset">
+        <button class="btn btn-success table-controls-selected"><i class="fa fa-check"></i> Mark Present</button>
+        <button class="btn btn-danger table-controls-selected"><i class="fa fa-times"></i> Mark Absent</button>
+    </p>
+</form>
+
+<p class="list-status">Showing attendance of Administration Department</p>
+<table class="table table-hover table-with-checkbox">
+
+    <tr>
+        <th><input type="checkbox" class="table-checkbox-select-all"/></th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact Number</th>
+        <th>Status</th>
+        <th></th>
+    </tr>
+
+
+    <tbody>
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>01</td>
+        <td><a href="#">Josep Wood</a></td>
+        <td>example@example.com</td>
+        <td>0333-3333333</td>
+        <td>Present</td>
+        <td>
+            <button title="Mark Present" class="btn btn-success"><i class="fa fa-check"> </i></button>
+            <button title="Mark Absent" class="btn btn-danger"><i class="fa fa-times"> </i></button>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>02</td>
+        <td><a href="#">David Jonees</a></td>
+        <td>example@example.com</td>
+        <td>0222-22222</td>
+        <td>Present</td>
+        <td>
+            <button title="Mark Present" class="btn btn-success"><i class="fa fa-check"> </i></button>
+            <button title="Mark Absent" class="btn btn-danger"><i class="fa fa-times"> </i></button>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>03</td>
+        <td><a href="#">Abraham</a></td>
+        <td>example@example.com</td>
+        <td>0334-5555555</td>
+        <td>Absent</td>
+        <td>
+            <button title="Mark Present" class="btn btn-success"><i class="fa fa-check"> </i></button>
+            <button title="Mark Absent" class="btn btn-danger"><i class="fa fa-times"> </i></button>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>04</td>
+        <td><a href="#">Example</a></td>
+        <td>example@example.com</td>
+        <td>0333-33333</td>
+        <td>Present</td>
+        <td>
+            <button title="Mark Present" class="btn btn-success"><i class="fa fa-check"> </i></button>
+            <button title="Mark Absent" class="btn btn-danger"><i class="fa fa-times"> </i></button>
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>05</td>
+        <td><a href="#">Lanson</a></td>
+        <td>example@example.com</td>
+        <td>000000000</td>
+        <td>Absent</td>
+        <td>
+            <button title="Mark Present" class="btn btn-success"><i class="fa fa-check"> </i></button>
+            <button title="Mark Absent" class="btn btn-danger"><i class="fa fa-times"> </i></button>
+
+        </td>
+    </tr>
+
+
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>06</td>
+        <td><a href="#">Ahmed</a></td>
+        <td>example@example.com</td>
+        <td>0222-22222</td>
+        <td>Present</td>
+        <td>
+            <button title="Mark Present" class="btn btn-success"><i class="fa fa-check"> </i></button>
+            <button title="Mark Absent" class="btn btn-danger"><i class="fa fa-times"> </i></button>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>07</td>
+        <td><a href="#">Ali</a></td>
+        <td>example@example.com</td>
+        <td>0334-5555555</td>
+        <td>Absent</td>
+        <td>
+            <button title="Mark Present" class="btn btn-success"><i class="fa fa-check"> </i></button>
+            <button title="Mark Absent" class="btn btn-danger"><i class="fa fa-times"> </i></button>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>08</td>
+        <td><a href="#">Danish</a></td>
+        <td>example@example.com</td>
+        <td>0333-33333</td>
+        <td>Present</td>
+        <td>
+            <button title="Mark Present" class="btn btn-success"><i class="fa fa-check"> </i></button>
+            <button title="Mark Absent" class="btn btn-danger"><i class="fa fa-times"> </i></button>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>09</td>
+        <td><a href="#">Hamza</a></td>
+        <td>example@example.com</td>
+        <td>000000000</td>
+        <td>Absent</td>
+        <td>
+            <button title="Mark Present" class="btn btn-success"><i class="fa fa-check"> </i></button>
+            <button title="Mark Absent" class="btn btn-danger"><i class="fa fa-times"> </i></button>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>10</td>
+        <td><a href="#">Umair</a></td>
+        <td>example@example.com</td>
+        <td>0222-22222</td>
+        <td>Present</td>
+        <td>
+            <button title="Mark Present" class="btn btn-success"><i class="fa fa-check"> </i></button>
+            <button title="Mark Absent" class="btn btn-danger"><i class="fa fa-times"> </i></button>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>11</td>
+        <td><a href="#">Usama</a></td>
+        <td>example@example.com</td>
+        <td>0334-5555555</td>
+        <td>Absent</td>
+        <td>
+            <button title="Mark Present" class="btn btn-success"><i class="fa fa-check"> </i></button>
+            <button title="Mark Absent" class="btn btn-danger"><i class="fa fa-times"> </i></button>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>12</td>
+        <td><a href="#">Ashraf</a></td>
+        <td>example@example.com</td>
+        <td>0333-33333</td>
+        <td>Present</td>
+        <td>
+            <button title="Mark Present" class="btn btn-success"><i class="fa fa-check"> </i></button>
+            <button title="Mark Absent" class="btn btn-danger"><i class="fa fa-times"> </i></button>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox"/></td>
+        <td>13</td>
+        <td><a href="#">Zeeshan</a></td>
+        <td>example@example.com</td>
+        <td>000000000</td>
+        <td>Absent</td>
+        <td>
+            <button title="Mark Present" class="btn btn-success"><i class="fa fa-check"> </i></button>
+            <button title="Mark Absent" class="btn btn-danger"><i class="fa fa-times"> </i></button>
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+
+
+

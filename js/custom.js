@@ -3,6 +3,7 @@ $(function () {
     // hash and load the corresponding page
 
     var $sidemenu = $("#side-menu");
+    var $checkBoxTable = $(".table-with-checkbox").find("input:checkbox");
     $(window).hashchange(function () {
         var hash = location.hash;//hash is the keyword at the end of url like #this
 
@@ -29,7 +30,7 @@ $(function () {
     // the event now, to handle the hash the page may have loaded with.
     $(window).hashchange();
 
-    //show table controls on changer event triggered on checkboxes in table.table-with-checkbox
+    //show table controls on change event triggered on checkboxes in table.table-with-checkbox
     $(document).on("change", ".table-with-checkbox input:checkbox", function () {
         var checked = $(this).prop('checked');
 
@@ -43,11 +44,23 @@ $(function () {
                     return false;
                 }
             });
+            $(".table-with-checkbox input.table-checkbox-select-all").prop('checked',false);
             checked ? showTableControls() : hideTableControls();
         }
 
     });
 
+    //select all items in table on change event triggered on .table-checkbox-select-all
+    $(document).on("change", ".table-with-checkbox input.table-checkbox-select-all", function () {
+
+        if($(this).prop('checked')){
+            $(".table-with-checkbox input:checkbox").prop('checked',true);
+        }
+        else{
+            $(".table-with-checkbox input:checkbox").prop('checked',false);
+            hideTableControls();
+        }
+    });
 
     function hideLoader() {
         $('.spinner').hide();

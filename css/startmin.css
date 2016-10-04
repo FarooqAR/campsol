@@ -26,6 +26,7 @@ body {
     padding: 30px 15px 0 15px;
     min-height: 568px;
     background-color: #fff;
+
 }
 
 @media (min-width: 768px) {
@@ -759,4 +760,50 @@ table.dataTable thead .sorting:after {
 .list-status{
     font-weight: bold;
     color: #999;
+}
+
+
+/*Dashboard*/
+.info-container > div.col-md-3.col-sm-6{
+    padding: 0 10px;
+    margin:5px 0;
+}
+.info-container .info-wrapper{
+    overflow: hidden;
+    background-color: #e7e7e7;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+.info-wrapper > div{
+    padding: 10px;
+    float: left;
+}
+.info-wrapper > div{
+    height: 130px;
+}
+.info-wrapper > div[class*="icon-bg-"]{
+    width: 100px;
+    text-align: center;
+    color: #fff;
+}
+.info-wrapper > div[class*="icon-bg-"] i{
+    font-size: 40px;
+    /*center the icon*/
+    line-height: calc(130px - 20px);
+}
+.info-wrapper > div.icon-bg-aqua{
+    background-color: #00c0ef;
+}
+.info-wrapper > div.icon-bg-red{
+    background-color: #dd4b39;
+}
+.info-wrapper > div.icon-bg-green{
+    background-color: #00a65a;
+}
+.info-wrapper > div.icon-bg-yellow{
+    background-color: #f39c12;
+}
+.info-wrapper > div.info-right{
+    width: calc(100% - 100px);
 }

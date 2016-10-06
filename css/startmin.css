@@ -3,15 +3,23 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-/* My CSS goes here ( Ghulam Ahmed ) */ 
 
-h3.sup{
+.centered-text{
     text-align: center;
 }
+.md-padding{
+    padding: 10px;
+}
+.md-margin{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
-/* My Css closed here ( Ghulam Ahmed ) */ 
-
-
+.with-shadow{
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
 
 body {
     background-color: #f8f8f8;
@@ -771,9 +779,6 @@ table.dataTable thead .sorting:after {
 .info-container .info-wrapper{
     overflow: hidden;
     background-color: #e7e7e7;
-    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
-    -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
 }
 .info-wrapper > div{
     padding: 10px;
@@ -807,3 +812,5 @@ table.dataTable thead .sorting:after {
 .info-wrapper > div.info-right{
     width: calc(100% - 100px);
 }
+
+

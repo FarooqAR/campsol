@@ -6,7 +6,7 @@
 
 <div class="info-container row">
     <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="info-wrapper">
+        <div class="info-wrapper with-shadow">
             <div class="icon-bg-aqua">
                 <i class="fa fa-users"></i>
             </div>
@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="info-wrapper">
+        <div class="info-wrapper with-shadow">
             <div class="icon-bg-red">
                 <i class="fa fa-graduation-cap"></i>
             </div>
@@ -39,7 +39,7 @@
         </div>
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="info-wrapper">
+        <div class="info-wrapper with-shadow">
             <div class="icon-bg-green">
                 <i class="fa fa-calendar"></i>
             </div>
@@ -50,7 +50,7 @@
         </div>
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="info-wrapper">
+        <div class="info-wrapper with-shadow">
             <div class="icon-bg-yellow">
                 <i class="fa fa-eye"></i>
             </div>
@@ -61,3 +61,75 @@
         </div>
     </div>
 </div>
+<div class="row md-margin">
+    <div class="col-md-6 md-margin">
+        <div class="teachers-att-chart-container md-padding with-shadow">
+            <h3 class="centered-text">Last 6 months Attendance <small>Teachers</small></h3>
+            <hr>
+            <div id="teachers-attendance-chart"></div>
+        </div>
+
+    </div>
+    <div class="col-md-6 md-margin">
+        <div class="events-calendar with-shadow">
+            <!-- Responsive calendar - START -->
+            <div class="responsive-calendar md-padding">
+                <h3 class="centered-text">Events</h3>
+                <hr>
+                <div class="controls">
+                    <a class="pull-left" data-go="prev">
+                        <div class="btn btn-primary">Prev</div>
+                    </a>
+                    <h4><span data-head-year></span> <span data-head-month></span></h4>
+                    <a class="pull-right" data-go="next">
+                        <div class="btn btn-primary">Next</div>
+                    </a>
+                </div>
+                <hr/>
+                <div class="day-headers">
+                    <div class="day header">Mon</div>
+                    <div class="day header">Tue</div>
+                    <div class="day header">Wed</div>
+                    <div class="day header">Thu</div>
+                    <div class="day header">Fri</div>
+                    <div class="day header">Sat</div>
+                    <div class="day header">Sun</div>
+                </div>
+                <div class="days" data-group="days">
+
+                </div>
+            </div>
+            <!-- Responsive calendar - END -->
+        </div>
+    </div>
+
+</div>
+<!--load events in calendar-->
+<script type="text/javascript">
+      $(document).ready(function () {
+        $(".responsive-calendar").responsiveCalendar({
+          time: new Date().getFullYear() + "-" + new Date().getMonth(),
+          events: {
+            "2016-09-30": {"number": 5, "url": "#"},
+            "2013-04-26": {"number": 1, "url": "#"}, 
+            "2013-05-03":{"number": 1}, 
+          }
+        });
+      });
+    </script>
+<script>
+    Morris.Bar({
+        element: 'teachers-attendance-chart',
+        data: [
+            { y: 'May', a: 100 },
+            { y: 'Jun', a: 75},
+            { y: 'Jul', a: 50},
+            { y: 'Aug', a: 75},
+            { y: 'Sep', a: 50},
+            { y: 'Oct', a: 75}
+        ],
+        xkey: 'y',
+        ykeys: ['a'],
+        labels: ['Attendance']
+    });
+    </script>

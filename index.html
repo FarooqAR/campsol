@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +17,7 @@
     <link href="css/metisMenu.min.css" rel="stylesheet">
 
     <!-- Timeline CSS -->
-    <link href="css/timeline.css" rel="stylesheet">
+    <!--<link href="css/timeline.css" rel="stylesheet">-->
 
     <!-- Custom CSS -->
     <link href="css/startmin.css" rel="stylesheet">
@@ -27,6 +28,8 @@
     <!-- Custom Fonts -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" href="css/responsive-calendar.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,17 +37,18 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
 
-<div id="wrapper">
+    <div id="wrapper">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">CampSol</a>
-        </div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">CampSol</a>
+            </div>
 
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -52,136 +56,143 @@
         </button>
 
 
-        <!-- Top Navigation: Right Menu -->
-        <ul class="nav navbar-right navbar-top-links">
-            <li class="dropdown navbar-inverse">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-bell fa-fw"></i> <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu dropdown-alerts">
-                    <li>
-                        <a href="#">
-                            <div>
-                                <i class="fa fa-comment fa-fw"></i> New Comment
-                                <span class="pull-right text-muted small">4 minutes ago</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a class="text-center" href="#">
-                            <strong>See All Alerts</strong>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-user fa-fw"></i> Ather <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu dropdown-user">
-                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+            <!-- Top Navigation: Right Menu -->
+            <ul class="nav navbar-right navbar-top-links">
+                <li class="dropdown navbar-inverse">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> Ather <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
-        <!-- Sidebar -->
-        <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav navbar-collapse">
+            <!-- Sidebar -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
 
-                <ul class="nav" id="side-menu">
-                    <li class="sidebar-search">
-                        <div class="input-group custom-search-form">
-                            <input type="text" class="form-control" placeholder="Search...">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
                                 <span class="input-group-btn">
                                     <button class="btn btn-primary" type="button">
                                         <i class="fa fa-search"></i>
                                     </button>
                                 </span>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#dashboard" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-graduation-cap fa-fw"></i> Students<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="#students-manage"><i class="fa fa-cog fa-fw"></i> Manage</a>
-                            </li>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#dashboard" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-graduation-cap fa-fw"></i> Students<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#students-manage"><i class="fa fa-cog fa-fw"></i> Manage</a>
+                                </li>
 
-                            <li>
-                                <a href="#students-exams"><i class="fa fa-file-text-o fa-fw"></i> Exams</a>
-                            </li>
-                            <li>
-                                <a href="#students-attendance"><i class="fa fa-check-square-o fa-fw"></i> Attendance</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-users fa-fw"></i> Employee<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li data-load='pages/employee/manage'>
-                                <a href="#employee-manage"><i class="fa fa-cog fa-fw"></i> Manage</a>
-                            </li>
-                            <li data-load='pages/employee/attendance'>
-                                <a href="#employee-attendance"><i class="fa fa-check-square-o fa-fw"></i> Attendance</a>
-                            </li>
-                        </ul>
-                    </li>
+                                <li>
+                                    <a href="#students-exams"><i class="fa fa-file-text-o fa-fw"></i> Exams</a>
+                                </li>
+                                <li>
+                                    <a href="#students-attendance"><i class="fa fa-check-square-o fa-fw"></i> Attendance</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-users fa-fw"></i> Employee<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li data-load='pages/employee/manage'>
+                                    <a href="#employee-manage"><i class="fa fa-cog fa-fw"></i> Manage</a>
+                                </li>
+                                <li data-load='pages/employee/attendance'>
+                                    <a href="#employee-attendance"><i class="fa fa-check-square-o fa-fw"></i> Attendance</a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a href="#"><i class="fa fa-paypal fa-fw"></i> PayRoll <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li data-load='pages/employee/manage'>
-                                <a href="#payroll-salary"><i class="fa fa-cog fa-fw"></i> Salary Record </a>
-                            </li>
-                        </ul>
-                    </li>
+                        <li>
+                            <a href="#"><i class="fa fa-paypal fa-fw"></i> PayRoll <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li data-load='pages/employee/manage'>
+                                    <a href="#payroll-salary"><i class="fa fa-cog fa-fw"></i> Salary Record </a>
+                                </li>
+                            </ul>
+                        </li>
 
 
-                </ul>
+                    </ul>
 
+                </div>
             </div>
-        </div>
-    </nav>
-<!-- Page Content -->
-    <div id="page-wrapper">
-        <div class="container-fluid">
+        </nav>
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
 
-            <div id="content">
+                <div id="content">
                     <!--pages will be loaded here-->
+                </div>
+                <div class="spinner"></div>
             </div>
-            <div class="spinner"></div>
         </div>
+
+
+
     </div>
 
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
 
-    
-</div>
+    <script src="js/jquery.ba-hashchange.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-<!-- jQuery -->
-<script src="js/jquery.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/metisMenu.min.js"></script>
 
-<script src="js/jquery.ba-hashchange.min.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/startmin.js"></script>
 
-<!-- Metis Menu Plugin JavaScript -->
-<script src="js/metisMenu.min.js"></script>
+    <!--Thats where we work js part-->
+    <script src="js/custom.js"></script>
 
-<!-- Custom Theme JavaScript -->
-<script src="js/startmin.js"></script>
+    <!--calendar-->
+    <script src="js/responsive-calendar.min.js"></script>
 
-<!--Thats where we work js part-->
-<script src="js/custom.js"></script>
-
+    <!--charts-->
+    <script src="js/raphael.min.js"></script>
+    <script src="js/morris.min.js"></script>
 </body>
+
 </html>
